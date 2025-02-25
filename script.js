@@ -4,6 +4,7 @@ const firstCardWidth = slider.querySelector(".card").offsetWidth;
 const sliderChildrens = [...slider.children];
 const dots = document.querySelectorAll(".dot");
 
+
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
 let cardPerView = Math.round(slider.offsetWidth / firstCardWidth);
@@ -19,6 +20,8 @@ sliderChildrens.slice(0, cardPerView).forEach(card => {
 slider.classList.add("no-transition");
 slider.scrollLeft = slider.offsetWidth;
 slider.classList.remove("no-transition");
+
+
 
 const dragStart = (e) => {
     isDragging = true;
@@ -102,17 +105,13 @@ updateDots();
 
 autoPlay();
 
+
 slider.addEventListener("mousedown", dragStart);
 slider.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 slider.addEventListener("scroll", infiniteScroll);
 work.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 work.addEventListener("mouseleave", autoPlay);
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const formGroups = document.querySelectorAll('.form-group');
@@ -134,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
 
     const closeFormBtn = document.getElementById('closeFormBtn');
     const formContainer = document.getElementById('contactFormContainer');
@@ -203,8 +201,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
 function changeImage(imagePath) {
     document.getElementById('mainImage').src = imagePath;
 }
@@ -244,7 +240,6 @@ const contentArray = [
 ];
 
 let currentIndex = 0;
-
 function changeImageAndContent() {
     const mainImage = document.getElementById('mainImage');
     const aboutPhotos = document.querySelectorAll('.about-photos');
@@ -274,3 +269,18 @@ document.querySelectorAll('.about-photos').forEach((el, index) => {
 window.onload = function () {
     changeImageAndContent();
 };
+
+
+
+const toggle_btn = document.getElementById('btn');
+let container = document.body
+
+toggle_btn.addEventListener('click', () =>{
+    if(container.style.backgroundColor === "white"){
+        container.style.backgroundColor = "black";
+        container.style.color = "white";
+    }else{
+        container.style.backgroundColor = "white"
+        container.style.color = "black"
+    }
+})

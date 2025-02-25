@@ -7,9 +7,75 @@
     box-sizing: border-box;
 }
 
+/* dark mode */
+:root .dark-mode {
+    --bg-main:#18122B;
+    --bg-primary: #ECF2FF; 
+}
+
+
+
+
+:root {
+
+    --bg-main:#ECF2FF;
+    --bg-primary: #18122B; 
+}
+
+html{
+    /* font-size: 62.5%; */
+}
+.header, .footer, .content {
+    /* background-color: var(--bg-main); */
+    /* color: var(--bg-primary); */
+}
+
+body {
+    /* background-color: var(--bg-main); */
+    /* color: var(--bg-primary); */
+
+    
+}
+
+
+.toggle-btn{
+    height: 10rem;
+    /* background-color:red; */
+    display:flex;
+    align-items: center;
+}
+
+
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(2rem);
+    /* background-color:#e6005c */
+}
+/* #checkbox {
+    visibility: hidden;
+} */
+/* .toggle-label {
+    width: 5rem;
+    height: 4rem;
+    background-color: var(--bg-primary);
+    position: relative;
+    border-radius: 10rem;
+}
+
+.toggle-ball{
+ width: 3rem;
+ height: 3rem;
+ border-radius:50%;
+ background-color: var(--bg-main);
+ display: inline-block;
+ position: absolute;
+ top: .5rem;
+ left: .5rem;
+ transition: all .2s linear;
+} */
+
+
+
 #header {
-    background: #ffffff;
-    color: black;
     padding: 100px 0;
     height: 100vh;
 }
@@ -76,6 +142,7 @@
     border-radius: 8px;
 }
 
+
 /* contact form-- */
 
 #showFormBtn {
@@ -103,7 +170,7 @@
     transform: translate(-50%, -50%) scale(0.8); 
     border: 1px solid #ccc;
     padding: 31px 32px 25.5px 32px;
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transition: opacity 0.8s, transform 0.8s; 
@@ -180,7 +247,7 @@
     border-radius: 5px;
     margin-right: 10px;
     vertical-align: middle;
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
 }
 
@@ -234,8 +301,8 @@
 
 
 #portfolio {
-    background: #fafafa;
-    color: black;
+    /* background: #fafafa; */
+    /* color: black; */
     padding: 100px 0;
 
 }
@@ -328,7 +395,7 @@
 
 .layer a {
     color: #ff3147;
-    background: #F4F4F4;
+    /* background: #F4F4F4; */
     font-weight: 700;
     border: 1px solid #F4F4F4;
 
@@ -416,7 +483,7 @@
 .slider .card {
     scroll-snap-align: start;
     height: 500px;
-    background: #fff;
+    /* background: #fff; */
     flex-direction: column;
     border-radius: 8px;
 }
@@ -439,7 +506,7 @@
 
 
 #about{
-    background: #ffffff;
+    /* background: #ffffff; */
     color: black;
     padding: 100px 0;
 }
@@ -559,8 +626,8 @@
 
 
 #stats{
-    background: #f4f4f4;
-    color: black;
+    /* background: #f4f4f4; */
+    /* color: black; */
     padding: 100px 0;
 }
 
@@ -568,7 +635,7 @@
     flex-basis: 23%;
     text-align: center;
     padding: 33px 31px;
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 
 .stats:hover{
@@ -592,8 +659,8 @@
 /* feedback */
 
 #feedback{
-    background: #ffffff;
-    color: black;
+    /* background: #ffffff; */
+    /* color: black; */
     padding: 100px 0;
 }
 
